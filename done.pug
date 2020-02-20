@@ -1,0 +1,23 @@
+html
+  head
+    title= 'visitor Form'
+  body
+    h1= 'Done, data has been saved!'
+
+    table(border=1, cellpadding=10)
+      tr 
+        th= '#'
+        th= 'Visitor Name'
+        th= 'Assisted By'
+        th= 'Visitor Age'
+        th= 'Date Of Visit'
+        th= 'Time Of Visit'
+        th= 'Comment'
+      tr
+        td= visitor.id
+        td= visitor.name
+        td= visitor.assistant
+        td= visitor.visitorAge
+        td= visitor.dateOfVisit.toLocaleDateString()
+        td= visitor.timeOfVisit
+        td= visitor.comments
