@@ -42,5 +42,9 @@ app.get('/done/:id', (req, res) => {
     })
 })
 
-app.listen(3000)
+const server = app.listen(3000)
 console.log('listening on port 3000')
+
+module.exports = {
+    server
+}
