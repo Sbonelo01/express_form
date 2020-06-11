@@ -91,12 +91,10 @@ const server = app.listen(`${port}`)
 console.log(`listening on port ${port}...`)
 
 
-<<<<<<< HEAD
-=======
+
 const server = app.listen(3000)
 console.log('listening on port 3000')
 
->>>>>>> 0deab72acaba6772b6ee2d1cb685574fed6120aa
 module.exports = {
     server
 }
