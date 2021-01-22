@@ -1,13 +1,12 @@
 
-require('dotenv').config()
 let {Pool} = require("pg");
 
 let pool = new Pool({
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    host: process.env.DB_HOST,
-    port: process.env.PORT,
-    database: process.env.PGDATABASE
+    user: 'user',
+    password: 'pass',
+    host: 'localhost',
+    port: 5432,
+    database: 'db'
 });
 
 
